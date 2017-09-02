@@ -23,6 +23,11 @@
     <sdef n="ij"     c="Interjection"/>
     <sdef n="adj"     c="Adjective"/>
     <sdef n="num"     c="Number"/>
+    <sdef n="pos"     c="Possessive"/>
+    <sdef n="ref"     c="Reflexive"/>
+    <sdef n="ind"     c="Indefinite"/>
+    <sdef n="itg"     c="Interrogative"/>
+
     <sdef n="p1"/>
 <sdef n="p2"/>
       <sdef n="p3"/>
@@ -31,6 +36,7 @@
 <sdef n="pr"     c="Preposition"/>
 <sdef n="ant"     c="Anthroponym"/>
 <sdef n="vbmod"     c="Vb. mod"/>
+<sdef n="nt"     c="nt"/>
 
   </sdefs>
     
@@ -70,8 +76,41 @@
     <pardef n="kokodiako__ij">
       <e><p><l></l><r><s n="ij"/></r></p></e>
    </pardef>
+    <pardef n="san__prn">
+      <e><p><l></l><r><s n="prn"/><s n="itg"/></r></p></e>
+   </pardef>
     <pardef n="tu__num">
       <e><p><l></l><r><s n="num"/><s n="pl"/></r></p></e>
+   </pardef>
+    <pardef n="wan__num">
+      <e><p><l></l><r><s n="num"/><s n="sg"/></r></p></e>
+   </pardef>
+    <pardef n="misrefi__prn">
+      <e><p><l></l><r><s n="prn"/><s n="ref"/><s n="p1"/><s n="sg"/></r></p></e>
+   </pardef>
+    <pardef n="yusrefi__prn">
+      <e><p><l></l><r><s n="prn"/><s n="ref"/><s n="p2"/><s n="sg"/></r></p></e>
+   </pardef>
+    <pardef n="ensrefi__prn">
+      <e><p><l></l><r><s n="prn"/><s n="ref"/><s n="p3"/><s n="sg"/></r></p></e>
+   </pardef>
+    <pardef n="wisrefi__prn">
+      <e><p><l></l><r><s n="prn"/><s n="ref"/><s n="p1"/><s n="pl"/></r></p></e>
+   </pardef>
+    <pardef n="unusrefi__prn">
+      <e><p><l></l><r><s n="prn"/><s n="ref"/><s n="p2"/><s n="pl"/></r></p></e>
+   </pardef>
+    <pardef n="densrefi__prn">
+      <e><p><l></l><r><s n="prn"/><s n="ref"/><s n="p3"/><s n="pl"/></r></p></e>
+   </pardef>
+    <pardef n="noti__prn">
+      <e><p><l></l><r><s n="prn"/><s n="ind"/><s n="sg"/></r></p></e>
+   </pardef>
+    <pardef n="wan sani__prn">
+      <e><p><l></l><r><s n="prn"/><s n="ind"/><s n="nt"/><s n="sg"/></r></p></e>
+   </pardef>
+    <pardef n="ai__cont">
+      <e><p><l>ai</l><r>prpers<s n="prn"/><s n="subj"/><s n="p3"/>+e<s n="sg"/><s n="aux"/></r></p></e>
    </pardef>
     <pardef n="musu__vbmod">
       <e><p><l></l><r><s n="vbmod"/></r></p></e>
@@ -79,20 +118,28 @@
     <pardef n="PRPERS__prn">
       <e><p><l>mi</l><r>prpers<s n="prn"/><s n="subj"/><s n="p1"/><s n="sg"/></r></p></e>
      <e><p><l>mi</l><r>prpers<s n="prn"/><s n="obj"/><s n="p1"/><s n="sg"/></r></p></e>
+     <e><p><l>mi</l><r>prpers<s n="det"/><s n="pos"/><s n="p1"/><s n="sg"/></r></p></e>
       <e><p><l>yu</l><r>prpers<s n="prn"/><s n="subj"/><s n="p2"/><s n="sg"/></r></p></e>
      <e><p><l>yu</l><r>prpers<s n="prn"/><s n="obj"/><s n="p2"/><s n="sg"/></r></p></e>
+     <e><p><l>yu</l><r>prpers<s n="det"/><s n="pos"/><s n="p2"/><s n="sg"/></r></p></e>
       <e><p><l>a</l><r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="sg"/></r></p></e>
      <e><p><l>en</l><r>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="sg"/></r></p></e>
+     <e><p><l>en</l><r>prpers<s n="det"/><s n="pos"/><s n="p3"/><s n="sg"/></r></p></e>
       <e><p><l>wi</l><r>prpers<s n="prn"/><s n="subj"/><s n="p1"/><s n="pl"/></r></p></e>
      <e><p><l>wi</l><r>prpers<s n="prn"/><s n="obj"/><s n="p1"/><s n="pl"/></r></p></e>
       <e><p><l>unu</l><r>prpers<s n="prn"/><s n="subj"/><s n="p2"/><s n="pl"/></r></p></e>
      <e><p><l>unu</l><r>prpers<s n="prn"/><s n="obj"/><s n="p2"/><s n="pl"/></r></p></e>
+      <e r="LR"><p><l>un</l><r>prpers<s n="prn"/><s n="subj"/><s n="p2"/><s n="pl"/></r></p></e>
+     <e r="LR"><p><l>un</l><r>prpers<s n="prn"/><s n="obj"/><s n="p2"/><s n="pl"/></r></p></e>
       <e><p><l>den</l><r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="pl"/></r></p></e>
      <e><p><l>den</l><r>prpers<s n="prn"/><s n="obj"/><s n="p3"/><s n="pl"/></r></p></e>
    </pardef>
     <pardef n="a__det">
       <e><p><l>a</l><r>a<s n="det"/><s n="sg"/></r></p></e>
       <e><p><l>den</l><r>a<s n="det"/><s n="pl"/></r></p></e>
+   </pardef>
+    <pardef n="wan__det">
+    <e><p><l>wan</l><r>wan<s n="det"/><s n="ind"/><s n="sg"/></r></p></e>
    </pardef>
       
   </pardefs>
@@ -128,6 +175,8 @@
       <e lm="nanga"><i>nanga</i><par n="fu__pr"/></e>
       <e lm="efu"><i>efu</i><par n="efu__adv"/></e>
       <e lm="sensi"><i>sensi</i><par n="sensi__cnjsub"/></e>
+      <e lm="ai" r="LR"><i></i><par n="ai__cont"/></e>
+      <e lm="wan"><i></i><par n="wan__det"/></e>
 
     <e lm="John"><i>John</i><par n="John__np"/></e>
 
@@ -487,7 +536,7 @@
 <e lm="blesi"><i>blesi</i><par n="pikin__n"/></e>
 <e lm="blesi"><i>blesi</i><par n="soigi__vblex"/></e>
 <e lm="blon"><i>blon</i><par n="pikin__n"/></e>
-<e lm="bo"><i>bo</i><par n="ben__aux"/></e>
+<e lm="bo"><i>bo</i><par n="musu__vbmod"/></e>
 <e lm="bo"><i>bo</i><par n="pikin__n"/></e>
 <e lm="bobi"><i>bobi</i><par n="pikin__n"/></e>
 <e lm="bobimofo"><i>bobimofo</i><par n="pikin__n"/></e>
@@ -940,7 +989,7 @@
 <e lm="ete wan leisi"><i>ete wan leisi</i><par n="efu__adv"/></e>
 <e lm="ete"><i>ete</i><par n="efu__adv"/></e>
 <e lm="fa"><i>fa</i><par n="efu__adv"/></e>
-<e lm="fa"><i>fa</i><par n="nanga__cnjcoo"/></e>
+<e lm="fa"><i>fa</i><par n="sensi__cnjsub"/></e>
 <e lm="fadon flaw"><i>fadon flaw</i><par n="soigi__vblex"/></e>
 <e lm="fadon"><i>fadon</i><par n="soigi__vblex"/></e>
 <e lm="fakansi"><i>fakansi</i><par n="pikin__n"/></e>
@@ -1327,6 +1376,7 @@
 <e lm="ini"><i>ini</i><par n="pikin__n"/></e>
 <e lm="ini-anu"><i>ini-anu</i><par n="pikin__n"/></e>
 <e lm="iniwan ten"><i>iniwan ten</i><par n="nanga__cnjcoo"/></e>
+<e lm="insei"><i>insei</i><par n="langi__adj"/></e>
 <e lm="inspektoro"><i>inspektoro</i><par n="pikin__n"/></e>
 <e lm="ipi"><i>ipi</i><par n="langi__adj"/></e>
 <e lm="ipi"><i>ipi</i><par n="pikin__n"/></e>
@@ -1358,6 +1408,7 @@
 <e lm="kamsoro"><i>kamsoro</i><par n="pikin__n"/></e>
 <e lm="kan"><i>kan</i><par n="pikin__n"/></e>
 <e lm="kan"><i>kan</i><par n="soigi__vblex"/></e>
+<e lm="kan"><i>kan</i><par n="musu__vbmod"/></e>
 <e lm="kanari"><i>kanari</i><par n="pikin__n"/></e>
 <e lm="kande"><i>kande</i><par n="efu__adv"/></e>
 <e lm="kandra"><i>kandra</i><par n="pikin__n"/></e>
@@ -1501,6 +1552,7 @@
 <e lm="komopo"><i>komopo</i><par n="soigi__vblex"/></e>
 <e lm="kompe"><i>kompe</i><par n="pikin__n"/></e>
 <e lm="komsarsi"><i>komsarsi</i><par n="pikin__n"/></e>
+<e lm="komtyi"><i>komtyi</i><par n="pikin__n"/></e>
 <e lm="kon bun baka"><i>kon bun baka</i><par n="soigi__vblex"/></e>
 <e lm="kon go"><i>kon go</i><par n="soigi__vblex"/></e>
 <e lm="kon makandra"><i>kon makandra</i><par n="soigi__vblex"/></e>
@@ -1947,6 +1999,7 @@
 <e lm="misi futu"><i>misi futu</i><par n="soigi__vblex"/></e>
 <e lm="misi"><i>misi</i><par n="pikin__n"/></e>
 <e lm="misi"><i>misi</i><par n="soigi__vblex"/></e>
+<e lm="misrefi"><i>misrefi</i><par n="misrefi__prn"/></e>
 <e lm="miti kon na wan"><i>miti kon na wan</i><par n="soigi__vblex"/></e>
 <e lm="miti"><i>miti</i><par n="pikin__n"/></e>
 <e lm="miti"><i>miti</i><par n="soigi__vblex"/></e>
@@ -2003,6 +2056,7 @@
 <e lm="na fu"><i>na fu</i><par n="soigi__vblex"/></e>
 <e lm="na"><i>na</i><par n="a__det"/></e>
 <e lm="na"><i>na</i><par n="fu__pr"/></e>
+<e lm="na tapu"><i>na<b/>tapu</i><par n="fu__pr"/></e>
 <e lm="nagri"><i>nagri</i><par n="pikin__n"/></e>
 <e lm="nai"><i>nai</i><par n="soigi__vblex"/></e>
 <e lm="nak'naki"><i>nak'naki</i><par n="soigi__vblex"/></e>
@@ -2059,6 +2113,8 @@
 <e lm="noso"><i>noso</i><par n="pikin__n"/></e>
 <e lm="noso-olo"><i>noso-olo</i><par n="pikin__n"/></e>
 <e lm="notarsi"><i>notarsi</i><par n="pikin__n"/></e>
+<e lm="noti"><i>noti</i><par n="noti__prn"/></e>
+<e lm="not'noti"><i>not'noti</i><par n="noti__prn"/></e>
 <e lm="notmuskati"><i>notmuskati</i><par n="pikin__n"/></e>
 <e lm="noto"><i>noto</i><par n="pikin__n"/></e>
 <e lm="now"><i>now</i><par n="efu__adv"/></e>
@@ -2134,9 +2190,11 @@
 <e lm="opa"><i>opa</i><par n="pikin__n"/></e>
 <e lm="opo doro"><i>opo doro</i><par n="pikin__n"/></e>
 <e lm="opo"><i>opo</i><par n="langi__adj"/></e>
+<e lm="opo"><i>opo</i><par n="efu__adv"/></e>
 <e lm="opo"><i>opo</i><par n="soigi__vblex"/></e>
 <e lm="opo-opo"><i>opo-opo</i><par n="pikin__n"/></e>
 <e lm="opolangi"><i>opolangi</i><par n="pikin__n"/></e>
+<e lm="oppasser"><i>oppasser</i><par n="pikin__n"/></e>
 <e lm="opruru"><i>opruru</i><par n="langi__adj"/></e>
 <e lm="opruru"><i>opruru</i><par n="pikin__n"/></e>
 <e lm="orga"><i>orga</i><par n="pikin__n"/></e>
@@ -2425,7 +2483,7 @@
 <e lm="salfu"><i>salfu</i><par n="soigi__vblex"/></e>
 <e lm="sali"><i>sali</i><par n="pikin__n"/></e>
 <e lm="samasama"><i>samasama</i><par n="pikin__n"/></e>
-<e lm="san"><i>san</i><par n="nanga__cnjcoo"/></e>
+<e lm="san"><i>san</i><par n="san__prn"/></e>
 <e lm="sanede"><i>sanede</i><par n="efu__adv"/></e>
 <e lm="sanede"><i>sanede</i><par n="nanga__cnjcoo"/></e>
 <e lm="sangabanga"><i>sangabanga</i><par n="soigi__vblex"/></e>
@@ -2530,7 +2588,7 @@
 <e lm="skoifi"><i>skoifi</i><par n="soigi__vblex"/></e>
 <e lm="skoifineki"><i>skoifineki</i><par n="pikin__n"/></e>
 <e lm="skoins'ai"><i>skoins'ai</i><par n="pikin__n"/></e>
-<e lm="skoinsi"><i>skoinsi</i><par n="efu__adv"/></e>
+<e lm="skoinsi"><i>skoinsi</i><par n="langi__adj"/></e>
 <e lm="skopu"><i>skopu</i><par n="pikin__n"/></e>
 <e lm="skopu"><i>skopu</i><par n="soigi__vblex"/></e>
 <e lm="skoro"><i>skoro</i><par n="soigi__vblex"/></e>
@@ -3024,11 +3082,11 @@
 <e lm="wan dei"><i>wan dei</i><par n="efu__adv"/></e>
 <e lm="wan lo"><i>wan lo</i><par n="langi__adj"/></e>
 <e lm="wan presi"><i>wan presi</i><par n="efu__adv"/></e>
-<e lm="wan sani"><i>wan sani</i><par n="pikin__n"/></e>
-<e lm="wan"><i>wan</i><par n="a__det"/></e>
+<e lm="wan sani"><i>wan sani</i><par n="wan sani__prn"/></e>
+<e lm="wan"><i>wan</i><par n="wan__det"/></e>
 <e lm="wan"><i>wan</i><par n="efu__adv"/></e>
 <e lm="wan"><i>wan</i><par n="langi__adj"/></e>
-<e lm="wan"><i>wan</i><par n="tu__num"/></e>
+<e lm="wan"><i>wan</i><par n="wan__num"/></e>
 <e lm="wana"><i>wana</i><par n="pikin__n"/></e>
 <e lm="wani taki"><i>wani taki</i><par n="soigi__vblex"/></e>
 <e lm="wani"><i>wani</i><par n="musu__vbmod"/></e>
@@ -3114,6 +3172,7 @@
 <e lm="wortu"><i>wortu</i><par n="pikin__n"/></e>
 <e lm="wortubuku"><i>wortubuku</i><par n="pikin__n"/></e>
 <e lm="wowoyo"><i>wowoyo</i><par n="pikin__n"/></e>
+<e lm="wraak"><i>wraak</i><par n="pikin__n"/></e>
 <e lm="wrifi"><i>wrifi</i><par n="soigi__vblex"/></e>
 <e lm="wroko moni"><i>wroko moni</i><par n="soigi__vblex"/></e>
 <e lm="wroko skin"><i>wroko skin</i><par n="soigi__vblex"/></e>
@@ -3167,6 +3226,7 @@
 <e lm="yuruten"><i>yuruten</i><par n="pikin__n"/></e>
 <e lm="yèrè"><i>yèrè</i><par n="kokodiako__ij"/></e>
 <e lm="zuidsei"><i>zuidsei</i><par n="pikin__n"/></e>
+<e lm="zuster"><i>zuster</i><par n="pikin__n"/></e>
 <e lm="èn"><i>èn</i><par n="nanga__cnjcoo"/></e>
 
 
