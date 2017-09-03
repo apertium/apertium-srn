@@ -27,6 +27,8 @@
     <sdef n="ref"     c="Reflexive"/>
     <sdef n="ind"     c="Indefinite"/>
     <sdef n="itg"     c="Interrogative"/>
+    <sdef n="dem"     c="Demonstrative"/>
+    <sdef n="qnt"/>
 
     <sdef n="p1"/>
 <sdef n="p2"/>
@@ -60,6 +62,9 @@
    </pardef>
     <pardef n="efu__adv">
       <e><p><l></l><r><s n="adv"/></r></p></e>
+   </pardef>
+    <pardef n="pe__adv">
+      <e><p><l></l><r><s n="adv"/><s n="itg"/></r></p></e>
    </pardef>
     <pardef n="ben__aux">
       <e><p><l></l><r><s n="aux"/></r></p></e>
@@ -115,6 +120,10 @@
     <pardef n="musu__vbmod">
       <e><p><l></l><r><s n="vbmod"/></r></p></e>
    </pardef>
+    <pardef n="a_trawan__prn">
+      <e>       <p><l>a</l>          <r>a<s n="prn"/><s n="dem"/><s n="sg"/></r></p></e>
+      <e>       <p><l>den</l>         <r>a<s n="prn"/><s n="dem"/><s n="pl"/></r></p></e>
+    </pardef>
     <pardef n="PRPERS__prn">
       <e><p><l>mi</l><r>prpers<s n="prn"/><s n="subj"/><s n="p1"/><s n="sg"/></r></p></e>
      <e><p><l>mi</l><r>prpers<s n="prn"/><s n="obj"/><s n="p1"/><s n="sg"/></r></p></e>
@@ -142,6 +151,9 @@
     <e><p><l>wan</l><r>wan<s n="det"/><s n="ind"/><s n="sg"/></r></p></e>
    </pardef>
       
+    <pardef n="ala__det">
+    <e><p><l></l><r><s n="det"/><s n="qnt"/><s n="pl"/></r></p></e>
+   </pardef>
   </pardefs>
 
   <section id="main" type="standard">
@@ -320,6 +332,7 @@
 <e lm="ala ten"><i>ala ten</i><par n="efu__adv"/></e>
 <e lm="ala tu"><i>ala tu</i><par n="tu__num"/></e>
 <e lm="ala"><i>ala</i><par n="langi__adj"/></e>
+<e lm="ala"><i>ala</i><par n="ala__det"/></e>
 <e lm="aladei"><i>aladei</i><par n="langi__adj"/></e>
 <e lm="aladi"><i>aladi</i><par n="nanga__cnjcoo"/></e>
 <e lm="alakondre"><i>alakondre</i><par n="langi__adj"/></e>
@@ -383,8 +396,8 @@
 <e lm="atibron"><i>atibron</i><par n="pikin__n"/></e>
 <e lm="awari"><i>awari</i><par n="pikin__n"/></e>
 <e lm="awaridomri"><i>awaridomri</i><par n="pikin__n"/></e>
-<e lm="awinsi fa"><i>awinsi fa</i><par n="nanga__cnjcoo"/></e>
-<e lm="awinsi"><i>awinsi</i><par n="nanga__cnjcoo"/></e>
+<e lm="awinsi fa"><i>awinsi fa</i><par n="sensi__cnjsub"/></e>
+<e lm="awinsi"><i>awinsi</i><par n="sensi__cnjsub"/></e>
 <e lm="ayun"><i>ayun</i><par n="pikin__n"/></e>
 <e lm="baba"><i>baba</i><par n="pikin__n"/></e>
 <e lm="baba"><i>baba</i><par n="soigi__vblex"/></e>
@@ -1319,6 +1332,7 @@
 <e lm="gwe"><i>gwe</i><par n="langi__adj"/></e>
 <e lm="gwe"><i>gwe</i><par n="soigi__vblex"/></e>
 <e lm="gwenti"><i>gwenti</i><par n="pikin__n"/></e>
+<e lm="gwenti de taki"><i>gwenti de taki</i><par n="pikin__n"/></e>
 <e lm="haira"><i>haira</i><par n="langi__adj"/></e>
 <e lm="har'hari"><i>har'hari</i><par n="pikin__n"/></e>
 <e lm="hari baka"><i>hari baka</i><par n="soigi__vblex"/></e>
@@ -1812,7 +1826,7 @@
 <e lm="leisibuku"><i>leisibuku</i><par n="pikin__n"/></e>
 <e lm="leitori"><i>leitori</i><par n="pikin__n"/></e>
 <e lm="lekdoru"><i>lekdoru</i><par n="pikin__n"/></e>
-<e lm="leki"><i>leki</i><par n="nanga__cnjcoo"/></e>
+<e lm="leki"><i>leki</i><par n="sensi__cnjsub"/></e>
 <e lm="leki"><i>leki</i><par n="pikin__n"/></e>
 <e lm="leki"><i>leki</i><par n="soigi__vblex"/></e>
 <e lm="lekti en ede"><i>lekti en ede</i><par n="soigi__vblex"/></e>
@@ -1966,6 +1980,7 @@
 <e lm="matrasi"><i>matrasi</i><par n="pikin__n"/></e>
 <e lm="matrosi"><i>matrosi</i><par n="pikin__n"/></e>
 <e lm="mayoro"><i>mayoro</i><par n="pikin__n"/></e>
+<e lm="meisje"><i>meisje</i><par n="pikin__n"/></e>
 <e lm="meki bigi"><i>meki bigi</i><par n="soigi__vblex"/></e>
 <e lm="meki futu"><i>meki futu</i><par n="soigi__vblex"/></e>
 <e lm="meki muiti"><i>meki muiti</i><par n="soigi__vblex"/></e>
@@ -2260,6 +2275,7 @@
 <e lm="patu"><i>patu</i><par n="pikin__n"/></e>
 <e lm="patyapatya"><i>patyapatya</i><par n="langi__adj"/></e>
 <e lm="pe"><i>pe</i><par n="pikin__n"/></e>
+<e lm="pe"><i>pe</i><par n="pe__adv"/></e>
 <e lm="peipi"><i>peipi</i><par n="pikin__n"/></e>
 <e lm="peiri"><i>peiri</i><par n="pikin__n"/></e>
 <e lm="pemba"><i>pemba</i><par n="pikin__n"/></e>
@@ -2316,6 +2332,7 @@
 <e lm="pisi"><i>pisi</i><par n="pikin__n"/></e>
 <e lm="pisi"><i>pisi</i><par n="soigi__vblex"/></e>
 <e lm="pisten"><i>pisten</i><par n="pikin__n"/></e>
+<e lm="plak"><i>plak</i><par n="soigi__vblex"/></e>
 <e lm="planga"><i>planga</i><par n="pikin__n"/></e>
 <e lm="plata broki"><i>plata broki</i><par n="pikin__n"/></e>
 <e lm="plata"><i>plata</i><par n="langi__adj"/></e>
@@ -2593,6 +2610,7 @@
 <e lm="skopu"><i>skopu</i><par n="soigi__vblex"/></e>
 <e lm="skoro"><i>skoro</i><par n="soigi__vblex"/></e>
 <e lm="skoro-ifrow"><i>skoro-ifrow</i><par n="pikin__n"/></e>
+<e lm="skoromati"><i>skoromati</i><par n="pikin__n"/></e>
 <e lm="skoromeister"><i>skoromeister</i><par n="pikin__n"/></e>
 <e lm="skoropapira"><i>skoropapira</i><par n="pikin__n"/></e>
 <e lm="skoropikin"><i>skoropikin</i><par n="pikin__n"/></e>
@@ -2984,6 +3002,7 @@
 <e lm="trapu"><i>trapu</i><par n="soigi__vblex"/></e>
 <e lm="trarki"><i>trarki</i><par n="pikin__n"/></e>
 <e lm="tratra"><i>tratra</i><par n="langi__adj"/></e>
+<e lm="a trawan"><i></i><par n="a_trawan__prn"/><p><l><b/>trawan</l><r><g><b/>trawan</g></r></p></e>
 <e lm="trefu"><i>trefu</i><par n="pikin__n"/></e>
 <e lm="triki"><i>triki</i><par n="pikin__n"/></e>
 <e lm="triki"><i>triki</i><par n="soigi__vblex"/></e>
